@@ -253,18 +253,18 @@ const Load = async (lati, longi) => {
   console.log(data);
   return data;
 };
-const Load3 = async (lati, longti) => {
-  let data;
-  await fetch(
-    `https://api.ipgeolocation.io/timezone?apiKey=1bf64be4ca514f6496ef027f00df0e20&lat=${lati}&long=${longti}`
-  )
-    .then((response) => response.json())
-    .then((users) => {
-      data = users;
-    });
-  console.log(data);
-  return data;
-};
+// const Load3 = async (lati, longti) => {
+//   let data;
+//   await fetch(
+//     `https://api.ipgeolocation.io/timezone?apiKey=1bf64be4ca514f6496ef027f00df0e20&lat=${lati}&long=${longti}`
+//   )
+//     .then((response) => response.json())
+//     .then((users) => {
+//       data = users;
+//     });
+//   console.log(data);
+//   return data;
+// };
 const Load1 = async (lati, longi) => {
   let data;
   await fetch(
